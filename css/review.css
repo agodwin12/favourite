@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+body a{
+    text-decoration: none;
+    color: white;
+}
+.wrapper{
+    background: white;
+    padding: 2rem;
+    max-width: 576px;
+    width: 100%;
+    border-radius: .75rem;
+    box-shadow: black;
+    text-align: center;
+}
+.wrapper h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 2rem;
+    color: yellow;
+    margin-bottom: 1rem;
+
+}
+.rating .star{
+    cursor: pointer;
+}
+.rating .star.active{
+    opacity: 0;
+    animation: animate .5s ease-in-out forwards;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: 1;
+    }
+}
+.rating .star:hover{
+    transform: scale(1.1);
+}
+textarea{
+    width: 100%;
+    background: #f0faff;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-bottom: .5rem;
+}
+.btn-group{
+    display: flex;
+    grid-gap: .5rem;
+    align-items: center;
+}
+.btn-group btn{
+    padding: .75rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+}
+.btn-group btn.submit{
+    background: green;
+    color: white;
+    font-weight: 600;
+}
+.btn-group btn.submit:hover{
+    background: lightgreen;
+
+}
+.btn-group btn.cancel{
+    background: red;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-group btn.cancel:hover{
+    background: tomato;
+
+}
+.input{
+    width: 100%;
+    margin-bottom: 20px;
+
+
+}
+
+
+
